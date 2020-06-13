@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: app.raybritton.tokenstorage:room:0.7.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3e126c8a541b0afdf0b90381128cdaee/jetified-room-0.7.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3e126c8a541b0afdf0b90381128cdaee/jetified-room-0.7.1/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/app.raybritton.tokenstorage/room/0.7.1/e3be95f948edd8e838bcf54440788ba86985c3ce/room-0.7.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/app.raybritton.tokenstorage/room/0.7.1/e4265a48a042c21c2649733d5ab612261c32df3c/room-0.7.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
