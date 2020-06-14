@@ -1,4 +1,4 @@
-package com.example.wforecast.Models;
+package com.example.wforecast.models;
 
 import com.google.gson.annotations.SerializedName;
 
@@ -15,13 +15,9 @@ import lombok.ToString;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-public class Current {
+public class Hourly {
     @SerializedName("dt")
     private long dt;
-    @SerializedName("sunrise")
-    private long sunrise;
-    @SerializedName("sunset")
-    private long sunset;
     @SerializedName("temp")
     private double temp;
     @SerializedName("feels_like")
@@ -32,16 +28,12 @@ public class Current {
     private int humidity;
     @SerializedName("dew_point")
     private double dew_point;
-    @SerializedName("uvi")
-    private double uvi;
     @SerializedName("clouds")
     private int clouds;
     @SerializedName("wind_speed")
     private double wind_speed;
     @SerializedName("wind_deg")
-    private int wind_deg;
-    @SerializedName("wind_gust")
-    private double wind_gust;
+    private double wind_deg;
     @SerializedName("weather")
     private List<Weather> weather;
 
@@ -51,22 +43,6 @@ public class Current {
 
     public void setDt(long dt) {
         this.dt = dt;
-    }
-
-    public long getSunrise() {
-        return sunrise;
-    }
-
-    public void setSunrise(long sunrise) {
-        this.sunrise = sunrise;
-    }
-
-    public long getSunset() {
-        return sunset;
-    }
-
-    public void setSunset(long sunset) {
-        this.sunset = sunset;
     }
 
     public double getTemp() {
@@ -109,14 +85,6 @@ public class Current {
         this.dew_point = dew_point;
     }
 
-    public double getUvi() {
-        return uvi;
-    }
-
-    public void setUvi(double uvi) {
-        this.uvi = uvi;
-    }
-
     public int getClouds() {
         return clouds;
     }
@@ -133,20 +101,12 @@ public class Current {
         this.wind_speed = wind_speed;
     }
 
-    public int getWind_deg() {
+    public double getWind_deg() {
         return wind_deg;
     }
 
-    public void setWind_deg(int wind_deg) {
+    public void setWind_deg(double wind_deg) {
         this.wind_deg = wind_deg;
-    }
-
-    public double getWind_gust() {
-        return wind_gust;
-    }
-
-    public void setWind_gust(double wind_gust) {
-        this.wind_gust = wind_gust;
     }
 
     public List<Weather> getWeather() {

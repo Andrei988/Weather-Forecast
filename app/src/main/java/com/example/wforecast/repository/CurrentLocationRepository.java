@@ -5,9 +5,9 @@ import android.util.Log;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 
-import com.example.wforecast.Models.Message;
 import com.example.wforecast.WebAPI.API;
 import com.example.wforecast.WebAPI.ApiConsumer;
+import com.example.wforecast.models.Message;
 import com.example.wforecast.utils.Common;
 
 import retrofit2.Call;
@@ -40,8 +40,8 @@ public class CurrentLocationRepository {
         Retrofit retrofit = ApiConsumer.getInstance().getRetrofitClient();
         API api = retrofit.create(API.class);
         final Call<Message> call = api.getHourlyLocalForecast(Common.CURRENT_LOCATION.getLatitude(),
-                                                                Common.CURRENT_LOCATION.getLongitude(),
-                                                                Common.API_KEY_2, Common.UNITS);
+                Common.CURRENT_LOCATION.getLongitude(),
+                Common.API_KEY_2, Common.UNITS);
 
         call.enqueue(new Callback<Message>() {
             @Override

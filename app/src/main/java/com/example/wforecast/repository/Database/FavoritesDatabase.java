@@ -6,7 +6,7 @@ import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
-import com.example.wforecast.Models.FavoriteCoordinates;
+import com.example.wforecast.models.FavoriteCoordinates;
 
 
 @Database(entities = {FavoriteCoordinates.class}, version = 1, exportSchema = false)

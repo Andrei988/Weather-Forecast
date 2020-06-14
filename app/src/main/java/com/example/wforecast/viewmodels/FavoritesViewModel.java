@@ -6,7 +6,7 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 
-import com.example.wforecast.Models.MessageList;
+import com.example.wforecast.models.MessageList;
 import com.example.wforecast.repository.FavoritesRepository;
 
 import java.util.concurrent.ExecutionException;

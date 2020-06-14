@@ -1,8 +1,8 @@
 package com.example.wforecast.WebAPI;
 
-import com.example.wforecast.Models.CityData;
-import com.example.wforecast.Models.Message;
-import com.example.wforecast.Models.MessageList;
+import com.example.wforecast.models.CityData;
+import com.example.wforecast.models.Message;
+import com.example.wforecast.models.MessageList;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

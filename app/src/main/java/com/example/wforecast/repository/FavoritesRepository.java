@@ -6,11 +6,11 @@ import android.util.Log;
 
 import androidx.lifecycle.MutableLiveData;
 
-import com.example.wforecast.Models.CityData;
-import com.example.wforecast.Models.FavoriteCoordinates;
-import com.example.wforecast.Models.MessageList;
 import com.example.wforecast.WebAPI.API;
 import com.example.wforecast.WebAPI.ApiConsumer;
+import com.example.wforecast.models.CityData;
+import com.example.wforecast.models.FavoriteCoordinates;
+import com.example.wforecast.models.MessageList;
 import com.example.wforecast.repository.Database.FavoritesDao;
 import com.example.wforecast.repository.Database.FavoritesDatabase;
 import com.example.wforecast.utils.Common;
@@ -173,5 +173,4 @@ public class FavoritesRepository {
             return null;
         }
     }
-
 }

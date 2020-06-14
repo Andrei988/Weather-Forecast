@@ -6,8 +6,8 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 
-import com.example.wforecast.Models.CityData;
-import com.example.wforecast.Models.FavoriteCoordinates;
+import com.example.wforecast.models.CityData;
+import com.example.wforecast.models.FavoriteCoordinates;
 import com.example.wforecast.repository.FavoritesRepository;
 import com.google.android.gms.maps.model.LatLng;
 

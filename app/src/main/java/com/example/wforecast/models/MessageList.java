@@ -1,4 +1,4 @@
-package com.example.wforecast.Models;
+package com.example.wforecast.models;
 
 import com.google.gson.annotations.SerializedName;
 
@@ -24,7 +24,7 @@ public class MessageList {
     List<CityData> list;
 
     public int size() {
-        if(list == null) {
+        if (list == null) {
             list = new ArrayList<>();
             return 0;
         }

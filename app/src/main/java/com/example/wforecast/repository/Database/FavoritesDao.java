@@ -5,7 +5,7 @@ import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.Query;
 
-import com.example.wforecast.Models.FavoriteCoordinates;
+import com.example.wforecast.models.FavoriteCoordinates;
 
 import java.util.List;
 

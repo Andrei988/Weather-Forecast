@@ -1,4 +1,4 @@
-package com.example.wforecast.Models;
+package com.example.wforecast.models;
 
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;

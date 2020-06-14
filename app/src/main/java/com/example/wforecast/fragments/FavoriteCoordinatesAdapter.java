@@ -13,8 +13,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.wforecast.Models.MessageList;
 import com.example.wforecast.R;
+import com.example.wforecast.models.MessageList;
 import com.example.wforecast.utils.Common;
 import com.squareup.picasso.MemoryPolicy;
 import com.squareup.picasso.Picasso;

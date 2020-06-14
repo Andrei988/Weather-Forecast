@@ -3,7 +3,7 @@ package com.example.wforecast.viewmodels;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.ViewModel;
 
-import com.example.wforecast.Models.Message;
+import com.example.wforecast.models.Message;
 import com.example.wforecast.repository.CurrentLocationRepository;
 
 public class CurrentLocationViewModel extends ViewModel {

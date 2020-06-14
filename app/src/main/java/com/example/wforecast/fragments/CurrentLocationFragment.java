@@ -18,7 +18,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
-import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -28,8 +27,8 @@ import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.wforecast.Models.Hourly;
 import com.example.wforecast.R;
+import com.example.wforecast.models.Hourly;
 import com.example.wforecast.utils.Common;
 import com.example.wforecast.utils.ValueFormatter;
 import com.example.wforecast.viewmodels.CurrentLocationViewModel;
@@ -48,7 +47,6 @@ import java.util.Calendar;
 import java.util.Collections;
 import java.util.List;
 import java.util.Locale;
-import java.util.Objects;
 
 import okhttp3.OkHttpClient;
 import okhttp3.Protocol;
@@ -133,11 +131,7 @@ public class CurrentLocationFragment extends Fragment {
             String countryName = addresses.get(0).getCountryCode();
 
             cityName.setText(name + ", " + countryName);
-            if (Common.UNITS.equals("metric")) {
-                temperature.setText(Math.round(message.getCurrent().getTemp()) + "°C");
-            } else if (Common.UNITS.equals("imperial")) {
-                temperature.setText(Math.round(message.getCurrent().getTemp()) + "°F");
-            }
+            temperature.setText(Math.round(message.getCurrent().getTemp()) + "°C");
             coordinates.setText(String.format("%s\" - %s\"", message.getLat(), message.getLon()));
 
             String desc = message.getCurrent().getWeather().get(0).getDescription();
@@ -191,14 +185,8 @@ public class CurrentLocationFragment extends Fragment {
         lineChart.getAxisLeft().setDrawGridLines(false);
         lineChart.getAxisRight().setDrawGridLines(false);
         lineChart.getXAxis().setLabelCount(6, true); // set x axis label count
-        if(Common.UNITS.equals("metric")) {
-            lineChart.getAxisLeft().setAxisMinimum(0); // set bounds
-            lineChart.getAxisLeft().setAxisMaximum(25);
-        } else {
-            lineChart.getAxisLeft().setAxisMinimum(0); // set bounds
-            lineChart.getAxisLeft().setAxisMaximum(70);
-        }
-
+        lineChart.getAxisLeft().setAxisMinimum(0); // set bounds
+        lineChart.getAxisLeft().setAxisMaximum(25);
         lineChart.getLegend().setEnabled(false);   // Hide legend
     }
 
